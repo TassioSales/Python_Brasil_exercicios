@@ -20,5 +20,7 @@
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_10.py">Exercicio 10</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_11.py">Exercicio 11</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_12.py">Exercicio 12</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_13.py">Exercicio 13</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_14.py">Exercicio 14</a></li>
       </ul>
 </ol>
