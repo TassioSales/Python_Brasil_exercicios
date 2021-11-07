@@ -3,10 +3,11 @@
 
 valor_lata = 80.00
 capacidade_da_lata = 18
+litro_para_cada_metros = 3
 
 metros =  float(input("Digite quantos metros quadrados deseja pintar: "))
 
-litros =  metros / 3
+litros =  metros / litro_para_cada_metros
 
 if litros <= 18:
     print("A quantidade de latas de tinta que voce ira gasta e 1")
