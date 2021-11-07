@@ -8,6 +8,6 @@
 <ol>
     <li>Lista 1 <a href = "https://github.com/TassioSales/Python_Brasil_exercicios/tree/master/1-EstruturaSequencial">Estrutura Sequencial</a></li>
       <ul>
-          <li>Link para questôes <a href = "https://wiki.python.org.br/EstruturaSequencial">Lista 1 Estrutura Sequencial</a></li>
+          <li>Link para questões <a href = "https://wiki.python.org.br/EstruturaSequencial">Lista 1 Estrutura Sequencial</a></li>
       </ul>
 </ol>
