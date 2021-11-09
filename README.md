@@ -28,3 +28,11 @@
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/1-EstruturaSequencial/exercicio_18.py">Exercicio 18</a></li>
       </ul>
 </ol>
+<ol>
+    <li>Lista 1 <a href = "https://github.com/TassioSales/Python_Brasil_exercicios/tree/master/2-EstruturaDeDecisao">Estrutura de Decisão</a></li>
+      <ul>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_1.py">Exercicio 1</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_2.py">Exercicio 2</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_3.py">Exercicio 3</a></li>
+      </ul>
+</ol>
