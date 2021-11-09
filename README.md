@@ -34,8 +34,8 @@
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_1.py">Exercicio 1</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_2.py">Exercicio 2</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_3.py">Exercicio 3</a></li>
-          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_3.py">Exercicio 4</a></li>
-          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_3.py">Exercicio 5</a></li>
-          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_3.py">Exercicio 6</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_4.py">Exercicio 4</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_5.py">Exercicio 5</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_6.py">Exercicio 6</a></li>
       </ul>
 </ol>
