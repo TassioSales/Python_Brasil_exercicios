@@ -37,5 +37,9 @@
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_4.py">Exercicio 4</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_5.py">Exercicio 5</a></li>
           <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_6.py">Exercicio 6</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_7.py">Exercicio 7</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_8.py">Exercicio 8</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_9.py">Exercicio 9</a></li>
+          <li><a href = "https://github.com/TassioSales/Python_Brasil_exercicios/blob/master/2-EstruturaDeDecisao/exercicio_10.py">Exercicio 10</a></li>
       </ul>
 </ol>
