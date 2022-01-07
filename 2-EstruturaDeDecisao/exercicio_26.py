@@ -9,8 +9,10 @@ acima de 20 litros, desconto de 6'%' por litro Escreva um algoritmo que leia o n
 
 
 print("Tipo de combustivel:")
+print()
 print('1 - Gasolina')
 print('2 - Álcool')
+print()
 
 opt = int(input("Digite o tipo de combustiveu: "))
 valor_gasolina = 6.75
