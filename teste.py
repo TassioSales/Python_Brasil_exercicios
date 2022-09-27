@@ -1,11 +1,22 @@
-"""Detectar números de CPF com separador de milhares e hífen."""
-import re
+#criar tabela
+import mysql.connector
+#nome, idade, sexo, altura, peso
 
-teste = ['000.000.000-00', '111.111.111-11', '0111.111.111-11', '11101110111-11', '111.111.111111', '1110110111111',
-         '..1.11011011-11']
+def criarTabela():
+    try:
+        con = mysql.connector.connect(host='localhost', database='teste', user='root', password='')
+        if con.is_connected():
+            cursor = con.cursor()
+            cursor.execute('CREATE TABLE IF NOT EXISTS pessoas (id INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100), idade INT, sexo VARCHAR(1), altura FLOAT, peso FLOAT)')
+            cursor.close()
+            con.close()
+    except Exception as e:
+        print(f'Erro: {e}')
 
-for cpf in teste:
-    if re.match(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$', cpf):
-        print(f'{cpf}')
-    else:
-        pass
+if __name__ == '__main__':
+    criarTabela()
+
+
+
+
+
