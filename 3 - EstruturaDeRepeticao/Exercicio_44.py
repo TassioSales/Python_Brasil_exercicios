@@ -55,7 +55,7 @@ def main():
     print(f'Nulo: {nulo}')
     print(f'Branco: {branco}')
     print(f'Percentual de votos nulos: {nulo / (jose + joao + maria + joana + nulo + branco) * 100}%')
-    print(f'Percentual de votos em branco: {branco / (jose + joao + maria + joana + nulo + branco) * 100}%')1
+    print(f'Percentual de votos em branco: {branco / (jose + joao + maria + joana + nulo + branco) * 100}%')
 
 
 
