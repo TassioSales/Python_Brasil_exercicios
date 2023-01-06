@@ -37,7 +37,6 @@ def realizarPerguntas():
                     break
                 else:
                     print("Resposta invalida Responda apenas com Sim ou Não")
-        print(listaRepostas)
         
     return listaRepostas
 
