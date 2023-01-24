@@ -6,14 +6,13 @@ def valorPagamento(valor, dias):
         valor = valor + (valor * 0.03) + (valor * 0.001 * dias)
     return valor
 
+
 def main():
     valor = float(input("Digite o valor da prestação: "))
     dias = int(input("Digite a quantidade de dias em atraso: "))
     valor = valorPagamento(valor, dias)
     print("O valor a ser pago é: R$ %.2f" % valor)
-    
-    
+
+
 if __name__ == "__main__":
     main()
-    
-    
