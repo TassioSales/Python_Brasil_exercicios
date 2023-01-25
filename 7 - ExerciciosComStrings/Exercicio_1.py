@@ -24,44 +24,58 @@ O arquivo de saída possui o seguinte formato:
 9.8.234.5
 192.168.0.256"""
 
-# função para ler o arquivo
+import re
+
+
+# função para ler o arquivo e retorna uma lista com os ips
 def lerArquivo():
     try:
         with open('ips.txt', 'r') as arquivo:
-            return arquivo.read()
+            ips = arquivo.readlines()
+            # remove o \n do final da string
+            ips = [ip.replace('\n', '') for ip in ips]
+            # transforma a lista em um set para remover os ips duplicados
+            ips = set(ips)
+            # transforma o set em uma lista novamente
+            ips = list(ips)
+            return ips
     except Exception as e:
         print(e)
         return lerArquivo()
 
 
-# função para validar o ip
-def validarIp(ip):
-    ip_valido = []
-    ip_invalido = []
-    for i in ip:
-        if i.count('.') == 3:
-            octeto = i.split('.')
-            if len(octeto) == 4:
-                if 0 <= int(octeto[0]) <= 255 and 0 <= int(octeto[1]) <= 255 and 0 <= int(octeto[2]) <= 255 and 0 <= int(octeto[3]) <= 255:
-                    ip_valido.append(i)
-                else:
-                    ip_invalido.append(i)
-            else:
-                ip_invalido.append(i)
+# calcula os ips validos e invalidos
+def calculaIps(ips):
+    ipsValidos = []
+    ipsInvalidos = []
+    for ip in ips:
+        if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', ip):
+            ipsValidos.append(ip)
         else:
-            ip_invalido.append(i)
+            ipsInvalidos.append(ip)
+    return ipsValidos, ipsInvalidos
 
 
-
-
-# Criar arquivo utf-8 com os ips válidos e inválidos separados por categoria
-
+# função para escrever o arquivo
+def escreveArquivo(ipsValidos, ipsInvalidos):
+    try:
+        with open('ips_validos.txt', 'w', encoding='utf-8') as arquivo:
+            arquivo.write('[Endereços válidos:] \n')
+            for ip in ipsValidos:
+                arquivo.write(ip + '\n')
+        with open('ips_invalidos.txt', 'w', encoding='utf-8') as arquivo:
+            arquivo.write('[Endereços inválidos:] \n')
+            for ip in ipsInvalidos:
+                arquivo.write(ip + '\n')
+    except Exception as e:
+        print(e)
+        return escreveArquivo(ipsValidos, ipsInvalidos)
 
 
 def main():
-    ip = lerArquivo().split(' ')
-    ip_valido, ip_invalido = validarIp(ip)
-    escreverArquivo(ip_valido, ip_invalido)
+    ips = lerArquivo()
+    ipsValidos, ipsInvalidos = calculaIps(ips)
+    escreveArquivo(ipsValidos, ipsInvalidos)
 
 
 if __name__ == '__main__':
