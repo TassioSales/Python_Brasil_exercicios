@@ -7,8 +7,8 @@ class ContaCorrente:
     import datetime
     import random
 
-    def __init__(self, numero_conta, nome_correntista, saldo=0):
-        self.numero_conta = numero_conta
+    def __init__(self, nome_correntista, saldo=0):
+        self.numero_conta = self.random.randint(1000, 9999)
         self.nome_correntista = nome_correntista
         self.saldo = saldo
         self.historico = []
@@ -38,7 +38,6 @@ class ContaCorrente:
     def saldo(self, saldo):
         self._saldo = saldo
 
-    #criar um método para gerar um número aleatório de 6 dígitos para o número da conta
     def gerar_numero_conta(self):
         self.numero_conta = self.random.randint(100000, 999999)
         self.historico.append(f'Número da conta alterado para {self.numero_conta} em {self.datetime.datetime.now()}')
@@ -53,8 +52,8 @@ class ContaCorrente:
 
     def saque(self, valor):
         if self.saldo >= valor:
-                    self.saldo -= valor
-                    self.historico.append(f'Saque de {valor} em {self.datetime.datetime.now()}')
+            self.saldo -= valor
+            self.historico.append(f'Saque de {valor} em {self.datetime.datetime.now()}')
         else:
             print('Saldo insuficiente')
 
@@ -68,7 +67,8 @@ class ContaCorrente:
         if self.saldo >= valor:
             self.saque(valor)
             conta_destino.deposito(valor)
-            self.historico.append(f'Transferência de {valor} para a conta {conta_destino.numero_conta} em {self.datetime.datetime.now()}')
+            self.historico.append(
+                f'Transferência de {valor} para a conta {conta_destino.numero_conta} em {self.datetime.datetime.now()}')
         else:
             print('Saldo insuficiente')
 
@@ -83,17 +83,13 @@ class ContaCorrente:
 
 
 if __name__ == '__main__':
-    conta1 = ContaCorrente(123456, 'João')
-    conta2 = ContaCorrente(654321, 'Maria')
-    conta1.gerar_numero_conta()
-    conta1.alterar_nome('João da Silva')
-    conta1.deposito(1000)
-    conta1.saque(500)
-    conta1.extrato()
-    conta1.transferencia(conta2, 200)
+    conta1 = ContaCorrente('José', 1000)
+    conta2 = ContaCorrente('Maria', 2000)
+    conta1.deposito(100)
+    conta1.saque(50)
+    conta1.transferencia(conta2, 100)
     conta1.extrato()
     conta2.extrato()
     print(conta1)
     print(conta2)
-
-
+    print(conta1 == conta2)
