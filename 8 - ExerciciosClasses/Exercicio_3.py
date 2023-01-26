@@ -41,13 +41,14 @@ class Retangulo:
 
 
 if __name__ == '__main__':
-    lado_a = int(input('Digite o valor do lado A: '))
-    lado_b = int(input('Digite o valor do lado B: '))
-    retangulo = Retangulo(lado_a, lado_b)
-    print(f'O valor dos lados é {retangulo.retornar_valor_lados()} e a área é {retangulo.calcular_area()} '
-          f'e o perímetro é {retangulo.calcular_perimetro()}')
-    lado_a = int(input('Digite o valor do lado A: '))
-    lado_b = int(input('Digite o valor do lado B: '))
-    retangulo.mudar_valor_lados(lado_a, lado_b)
-    print(f'O valor dos lados é {retangulo.retornar_valor_lados()} e a área é {retangulo.calcular_area()} '
-          f'e o perímetro é {retangulo.calcular_perimetro()}')
+    for i in range(2):
+        lado_a = int(input('Digite o valor do lado A: '))
+        lado_b = int(input('Digite o valor do lado B: '))
+        retangulo = Retangulo(lado_a, lado_b)
+        print(f'O valor do lado A é {retangulo.retornar_valor_lados()[0]} e o valor do lado B é '
+              f'{retangulo.retornar_valor_lados()[1]} e a área é {retangulo.calcular_area()} e o perímetro é '
+              f'{retangulo.calcular_perimetro()}')
+        retangulo.mudar_valor_lados(20, 30)
+        print(f'O valor do lado A é {retangulo.retornar_valor_lados()[0]} e o valor do lado B é '
+              f'{retangulo.retornar_valor_lados()[1]} e a área é {retangulo.calcular_area()} e o perímetro é '
+              f'{retangulo.calcular_perimetro()}')
