@@ -1,0 +1,15 @@
+Nome: João
+CPF: 123.456.789-00
+Endereço: Rua do João
+Bairro: Centro
+Cidade: São Paulo
+Estado: SP
+CEP: 12345-678
+Telefone: (11) 1234-5678
+E-mail: joao@gmail.com
+Data: 01/01/2019
+Hora: 12:00
+Serviço: Corte de cabelo
+Valor: R$ 50,00
+Observações: Cabelo comprido
+Total: R$ 50,00
